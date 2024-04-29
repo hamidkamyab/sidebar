@@ -1,13 +1,85 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    direction: rtl;
+    position: relative;
+    background-color: #341f97;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    font-family: 'IranYekan';
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu-btn {
+    background-color: #341f97;
+    box-shadow: 1px 1px 4px 2px #1b0d58 inset, -1px -1px 4px 2px #5840c7 inset;
+    color: #fff;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.menu-btn:hover {
+    background-color: #5f27cd;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.sidebar {
+    width: 240px;
+    position: absolute;
+    height: 100%;
+    background-color: #341f97;
+    box-shadow: 4px 0px 8px 2px #1b0d58 inset;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    -o-transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+}
+
+.logo img {
+    width: 64px;
+}
+
+.close-btn {
+    background-color: #5f27cd;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.close-btn:hover {
+    background-color: #733ddf;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.menuItemBox .menuItem a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.menuItemBox .menuItem a:hover {
+    color: #fff200;
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+}
+
+.menuItemBox .menuItem a span {
+    font-size: 14px;
 }
