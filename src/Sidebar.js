@@ -1,16 +1,18 @@
 ﻿import React from 'react'
 import * as IO5 from "react-icons/io5";
 import { list } from './data'
+import { useGetContext } from './context';
 
 function Sidebar() {
+    const {showSidebar,closeSidebar} = useGetContext();
     return (
-        <div className='sidebar'>
+        <div className='sidebar' data-open={showSidebar}>
             <div className='sidebar-header d-flex flex-column align-items-center gap-3'>
-                <div className='close-btn text-white py-2 d-flex justify-content-center w-100' role='button'>
+                <div className='close-btn text-white py-2 d-flex justify-content-center w-100' onClick={closeSidebar} role='button'>
                     <IO5.IoClose size={30} />
                 </div>
                 <div className='logo d-flex justify-content-center'>
-                    <img src="/logo.png" alt="" srcset="" />
+                    <img src="/logo.png" alt="" />
                 </div>
             </div>
             <div className='menuItemBox mt-5'>
